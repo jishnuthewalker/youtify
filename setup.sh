@@ -11,7 +11,7 @@ pkg install python ffmpeg -y
 #Installs python
 
 pip install youtube-dl  
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/SwapnilSoni1999/spotify-dl/master/tools/termux.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/jishnuthewalker/spotify-dl/master/tools/termux.sh)"
 #Installs youtube-dl and spotify-dl
 
 #~Starts Youtube-dl configuration~
