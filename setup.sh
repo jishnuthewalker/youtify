@@ -11,8 +11,8 @@ pkg install python ffmpeg -y
 #Installs python
 
 pip install youtube-dl  
-pip3 install spotdl
-#Installs youtube-dl and spotdl
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/SwapnilSoni1999/spotify-dl/master/tools/termux.sh)"
+#Installs youtube-dl and spotify-dl
 
 #~Starts Youtube-dl configuration~
 
@@ -39,18 +39,18 @@ if [[ ! -d /data/data/com.termux/files/home/storage/shared/Music ]]; then
 fi 
 #Creates folder where the music will be downloaded
 
-if [[ -e /data/data/com.termux/files/home/.config/spotdl/config.yml ]]; then
-  mv ~/.config/spotdl/config.yml ~/.config/spotdl/config.backup
+if [[ -e /data/data/com.termux/files/home/.config/spotifydl/config.yml ]]; then
+  mv ~/.config/spotifydl/config.yml ~/.config/spotifydl/config.backup
 fi 
 
-if [[ ! -d /data/data/com.termux/files/home/.config/spotdl ]]; then
-  mkdir /data/data/com.termux/files/home/.config/spotdl
+if [[ ! -d /data/data/com.termux/files/home/.config/spotifydl ]]; then
+  mkdir /data/data/com.termux/files/home/.config/spotifydl
 fi 
 
 
-cp config.yml ~/.config/spotdl/config.yml
+cp config.yml ~/.config/spotifydl/config.yml
 
-#~Ends spotdl configuration~
+#~Ends spotifydl configuration~
 
 if [[ ! -d ~/bin ]]; then
   mkdir ~/bin
@@ -72,7 +72,7 @@ youtube-dl https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
 echo "..."
 echo "Downloading test song"
-spotdl --song https://open.spotify.com/track/4uLU6hMCjMI75M1A2tKUQC?si=dLH5xrYaT_CX4RJ3sfFpvA
+spotifydl https://open.spotify.com/track/4uLU6hMCjMI75M1A2tKUQC?si=dLH5xrYaT_CX4RJ3sfFpvA -o /data/data/com.termux/files/home/storage/shared/Music
 #Downloads Rick Astley's Never gonna Give you Up song
 
 echo "..."
