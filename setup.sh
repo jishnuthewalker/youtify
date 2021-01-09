@@ -1,4 +1,4 @@
-#!/data/data/com.termux/files/usr/bin/bash
+#!/storage/emulated/0/Android/data/com.termux/files/usr/bin/bash
 
 termux-setup-storage 
 #Asks for storage permissions
@@ -34,17 +34,17 @@ cp config ~/.config/youtube-dl
 #~Starts spotdl configuration~
 
 
-if [[ ! -d /data/data/com.termux/files/home/storage/shared/Music ]]; then
-  mkdir /data/data/com.termux/files/home/storage/shared/Music
+if [[ ! -d /storage/emulated/0/Android/data/com.termux/files/home/storage/shared/Music ]]; then
+  mkdir /storage/emulated/0/Android/data/com.termux/files/home/storage/shared/Music
 fi 
 #Creates folder where the music will be downloaded
 
-if [[ -e /data/data/com.termux/files/home/.config/spotifydl/config.yml ]]; then
+if [[ -e /storage/emulated/0/Android/data/com.termux/files/home/.config/spotifydl/config.yml ]]; then
   mv ~/.config/spotifydl/config.yml ~/.config/spotifydl/config.backup
 fi 
 
-if [[ ! -d /data/data/com.termux/files/home/.config/spotifydl ]]; then
-  mkdir /data/data/com.termux/files/home/.config/spotifydl
+if [[ ! -d /storage/emulated/0/Android/data/com.termux/files/home/.config/spotifydl ]]; then
+  mkdir /storage/emulated/0/Android/data/com.termux/files/home/.config/spotifydl
 fi 
 
 
