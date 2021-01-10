@@ -1,4 +1,4 @@
-#!/storage/emulated/0/Android/data/com.termux/files/usr/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
 
 termux-setup-storage 
 #Asks for storage permissions
