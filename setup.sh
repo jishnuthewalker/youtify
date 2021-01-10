@@ -57,7 +57,7 @@ chmod +x ~/bin/termux-file-editor
 
 
 echo "Downloading test video"
-youtube-dl https://www.youtube.com/watch?v=dQw4w9WgXcQ -o /storage/emulated/0/Download/spotifydl
+youtube-dl https://www.youtube.com/watch?v=dQw4w9WgXcQ 
 #Downloads Rick Astley's Never gonna Give you Up video
 
 echo "..."
