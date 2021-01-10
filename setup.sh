@@ -34,23 +34,11 @@ cp config ~/.config/youtube-dl
 #~Starts spotdl configuration~
 
 
-if [[ ! -d /storage/emulated/0/Android/data/com.termux/files/home/storage/shared/Music ]]; then
-  mkdir /storage/emulated/0/Android/data/com.termux/files/home/storage/shared/Music
+if [[ ! -d /storage/emulated/0/Download/spotifydl ]]; then
+  mkdir /storage/emulated/0/Download/spotifydl
 fi 
 #Creates folder where the music will be downloaded
 
-if [[ -e /storage/emulated/0/Android/data/com.termux/files/home/.config/spotifydl/config.yml ]]; then
-  mv ~/.config/spotifydl/config.yml ~/.config/spotifydl/config.backup
-fi 
-
-if [[ ! -d /storage/emulated/0/Android/data/com.termux/files/home/.config/spotifydl ]]; then
-  mkdir /storage/emulated/0/Android/data/com.termux/files/home/.config/spotifydl
-fi 
-
-
-cp config.yml ~/.config/spotifydl/config.yml
-
-#~Ends spotifydl configuration~
 
 if [[ ! -d ~/bin ]]; then
   mkdir ~/bin
@@ -63,8 +51,6 @@ fi
 
 cp termux-url-opener ~/bin
 chmod +x ~/bin/termux-url-opener
-cp termux-file-editor ~/bin
-chmod +x ~/bin/termux-file-editor
 
 echo "Downloading test video"
 youtube-dl https://www.youtube.com/watch?v=dQw4w9WgXcQ
