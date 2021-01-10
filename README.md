@@ -1,5 +1,7 @@
 # youtify
-Installs and configures youtube-dl and spotdl for music and videos downloading in android termux
+Installs and configures youtube-dl and spotifydl for music and videos downloading in android termux
+
+***this is a modified script from https://github.com/gabosxpiens/youtify
 
 You can simply install this downloader by copy an pasting the next lines of code after a clean termux install (you can install it after installing other programs or repositories but I don garantize it to work):
 ```
