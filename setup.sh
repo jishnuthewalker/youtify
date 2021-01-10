@@ -43,6 +43,7 @@ fi
 if [[ ! -d ~/bin ]]; then
   mkdir ~/bin
 fi 
+
 #Creates bin folder for termux-url-opener and termux-file-editor if doesn't exists
 
 if [[ -e ~/bin/termux-url-opener ]]; then
@@ -51,6 +52,9 @@ fi
 
 cp termux-url-opener ~/bin
 chmod +x ~/bin/termux-url-opener
+cp termux-file-editor ~/bin
+chmod +x ~/bin/termux-file-editor
+
 
 echo "Downloading test video"
 youtube-dl https://www.youtube.com/watch?v=dQw4w9WgXcQ -o /storage/emulated/0/Download/spotifydl
