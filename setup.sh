@@ -53,7 +53,7 @@ cp termux-url-opener ~/bin
 chmod +x ~/bin/termux-url-opener
 
 echo "Downloading test video"
-youtube-dl https://www.youtube.com/watch?v=dQw4w9WgXcQ
+youtube-dl https://www.youtube.com/watch?v=dQw4w9WgXcQ -o /storage/emulated/0/Download/spotifydl
 #Downloads Rick Astley's Never gonna Give you Up video
 
 echo "..."
