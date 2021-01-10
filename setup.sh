@@ -62,7 +62,7 @@ youtube-dl https://www.youtube.com/watch?v=dQw4w9WgXcQ -o /storage/emulated/0/Do
 
 echo "..."
 echo "Downloading test song"
-spotifydl https://open.spotify.com/track/4uLU6hMCjMI75M1A2tKUQC?si=dLH5xrYaT_CX4RJ3sfFpvA -o /storage/emulated/0/Download/spotifydl
+spotifydl https://open.spotify.com/track/4uLU6hMCjMI75M1A2tKUQC?si=dLH5xrYaT_CX4RJ3sfFpvA -o /storage/emulated/0/Download/spotifydl/videos
 #Downloads Rick Astley's Never gonna Give you Up song
 
 echo "..."
