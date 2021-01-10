@@ -58,7 +58,7 @@ youtube-dl https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
 echo "..."
 echo "Downloading test song"
-spotifydl https://open.spotify.com/track/4uLU6hMCjMI75M1A2tKUQC?si=dLH5xrYaT_CX4RJ3sfFpvA -o /data/data/com.termux/files/home/storage/shared/Music
+spotifydl https://open.spotify.com/track/4uLU6hMCjMI75M1A2tKUQC?si=dLH5xrYaT_CX4RJ3sfFpvA -o /storage/emulated/0/Download/spotifydl
 #Downloads Rick Astley's Never gonna Give you Up song
 
 echo "..."
