@@ -2,22 +2,40 @@
 
 # Get the URL
 URL=$1
+
+clear
+
 echo "Opening URL"
 
 # Cheks if its Youtube or Spotify URL and downloads it
 if [[ $URL == *"open.spotify.com"* ]] ; then
+
+    SONG_DIR="/storage/emulated/0/Download/spotifydl" #for Termux only
+    NODE_ENV=$(which node)
+    SPOTIFYDL=$(which spotifydl)
+    
+    # check if directory exist or not
+    if [[ ! -d $SONG_DIR ]]; then
+        # directory doesn't exist create it for use.
+        mkdir $SONG_DIR
+    fi
+    
+    
   echo "Spotify link detected"
   if [[ $URL == *"playlist"* ]]; then
     echo "Downloading Playlist"
-    spotifydl $URL -o /storage/emulated/0/Download
+    # Download the song to song directory.
+    $NODE_ENV $SPOTIFYDL $URL -o $SONG_DIR
   fi
   if [[ $URL == *"track"* ]]; then
     echo "Downloading Song"
-    spotifydl $URL -o /storage/emulated/0/Download
+    # Download the song to song directory.
+    $NODE_ENV $SPOTIFYDL $URL -o $SONG_DIR
   fi
   if  [[ $URL == *"album"* ]]; then
     echo "Downloading Album"
-    spotifydl $URL -o /storage/emulated/0/Download
+    # Download the song to song directory.
+    $NODE_ENV $SPOTIFYDL $URL -o $SONG_DIR
   fi
 elif  [[ $URL == *"youtu.be"* || $URL == *"youtube.com"* ]]; then
   formatvar=0
